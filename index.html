@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat The Line - Sports Betting Evaluation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero-pattern {
+            background-color: #1a202c;
+            background-image: radial-gradient(#4a5568 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .sport-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .sport-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold">Beat The Line</h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-blue-300">Home</a>
+                <a href="#" class="hover:text-blue-300">Sports</a>
+                <a href="#" class="hover:text-blue-300">Subscription</a>
+                <a href="#" class="hover:text-blue-300">About</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="bg-blue-700 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium">Sign In</button>
+                <button class="bg-green-600 hover:bg-green-500 px-4 py-2 rounded-lg font-medium">Register</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Make Smarter Betting Decisions</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Real-time data and analytics for golf, basketball, baseball, hockey, and tennis to help you beat the line.</p>
+            <button class="bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-8 rounded-lg text-lg shadow-lg">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Sports Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Sports Coverage</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Basketball -->
+                <div class="sport-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-orange-500 h-2"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Basketball</h3>
+                        <p class="text-gray-600 mb-4">Live scores, standings, and betting odds for NBA and international leagues.</p>
+                        <a href="#" class="text-orange-500 font-medium hover:text-orange-600">View Basketball →</a>
+                    </div>
+                </div>
+                
+                <!-- Baseball -->
+                <div class="sport-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-blue-500 h-2"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Baseball</h3>
+                        <p class="text-gray-600 mb-4">MLB stats, game schedules, and betting insights for all teams.</p>
+                        <a href="#" class="text-blue-500 font-medium hover:text-blue-600">View Baseball →</a>
+                    </div>
+                </div>
+                
+                <!-- Hockey -->
+                <div class="sport-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-indigo-500 h-2"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Hockey</h3>
+                        <p class="text-gray-600 mb-4">NHL game data, team rankings, and betting odds analysis.</p>
+                        <a href="#" class="text-indigo-500 font-medium hover:text-indigo-600">View Hockey →</a>
+                    </div>
+                </div>
+                
+                <!-- Golf -->
+                <div class="sport-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-green-500 h-2"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Golf</h3>
+                        <p class="text-gray-600 mb-4">Tournament coverage, player stats, and betting opportunities.</p>
+                        <a href="#" class="text-green-500 font-medium hover:text-green-600">View Golf →</a>
+                    </div>
+                </div>
+                
+                <!-- Tennis -->
+                <div class="sport-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-yellow-500 h-2"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Tennis</h3>
+                        <p class="text-gray-600 mb-4">Grand Slam coverage, player matchups, and betting analysis.</p>
+                        <a href="#" class="text-yellow-500 font-medium hover:text-yellow-600">View Tennis →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Beat The Line</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Real-Time Data</h3>
+                    <p class="text-gray-600">Access up-to-the-minute scores, stats, and odds from all major sports.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Betting Insights</h3>
+                    <p class="text-gray-600">Get expert analysis and trends to make informed betting decisions.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Premium Subscription</h3>
+                    <p class="text-gray-600">Unlock advanced features and exclusive content with our premium plan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Beat The Line?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of bettors who are making smarter decisions with our real-time data and insights.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-blue-900 font-bold py-3 px-8 rounded-lg text-lg shadow-lg hover:bg-gray-100">Sign Up Now</button>
+                <button class="bg-transparent border-2 border-white font-bold py-3 px-8 rounded-lg text-lg shadow-lg hover:bg-blue-800">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Beat The Line</h3>
+                    <p class="text-gray-400">Your source for sports betting evaluation and real-time data analysis.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Sports</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Basketball</a></li>
+                        <li><a href="#" class="hover:text-white">Baseball</a></li>
+                        <li><a href="#" class="hover:text-white">Hockey</a></li>
+                        <li><a href="#" class="hover:text-white">Golf</a></li>
+                        <li><a href="#" class="hover:text-white">Tennis</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Subscribe</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with the latest betting insights and features.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-gray-900">
+                        <button class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-500">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Beat The Line. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

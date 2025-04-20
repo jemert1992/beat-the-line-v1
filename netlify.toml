@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
-  publish = "out"
+  # No build command needed for static HTML
+  publish = "."
   
 # Handle client-side routing for SPA
 [[redirects]]
@@ -9,12 +9,6 @@
   status = 200
   
 # Set cache headers for static assets
-[[headers]]
-  for = "/_next/static/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Set cache headers for images
 [[headers]]
   for = "/*.{jpg,jpeg,png,gif,webp,svg,ico}"
   [headers.values]
