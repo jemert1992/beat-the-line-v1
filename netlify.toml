@@ -1,18 +1,12 @@
 [build]
   command = "npm run build"
-  publish = ".next/standalone"
+  publish = "out"
   
-# Handle API routes and client-side routing
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api/:splat"
-  status = 200
-  
+# Handle client-side routing for SPA
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  force = false
   
 # Set cache headers for static assets
 [[headers]]
