@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
   },
   // Disable React strict mode for production to avoid double-rendering issues
   reactStrictMode: false,
+  // Add experimental features to fix rendering issues
+  experimental: {
+    appDir: true,
+  },
 }
 
 export default nextConfig
