@@ -8,17 +8,16 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  output: 'export',
+  // Using standalone mode for Netlify SSR deployment
+  output: 'standalone',
   // Ensure proper handling of static assets
   images: {
     unoptimized: true,
   },
   // Disable React strict mode for production to avoid double-rendering issues
   reactStrictMode: false,
-  // Add experimental features to fix rendering issues
-  experimental: {
-    appDir: true,
-  },
+  // Ensure trailing slashes for better compatibility
+  trailingSlash: true,
 }
 
 export default nextConfig
