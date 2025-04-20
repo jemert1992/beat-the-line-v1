@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  output: 'standalone',
+  output: 'export',
   // Ensure proper handling of static assets
   images: {
     unoptimized: true,
